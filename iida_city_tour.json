@@ -1,0 +1,28 @@
+{
+    "city": [
+        {
+            "name": "元善光寺",
+            "lat": 35.533894,
+            "lng": 137.856297,
+            "url": "https://motozenkoji.jp/"
+        },
+        {
+            "name": "飯田市立動物園",
+            "lat": 35.514109,
+            "lng": 137.824046,
+            "url": "http://iidazoo.jp/"
+        },
+        {
+            "name": "しらびそ高原",
+            "lat": 35.433614,
+            "lng": 138.029352,
+            "url": "http://shirabiso.com/"
+        },
+        {
+            "name": "下栗の里",
+            "lat": 35.375066,
+            "lng": 137.986351,
+            "url": "http://www.shimoguri.com/about.html"
+        }
+    ]
+}
