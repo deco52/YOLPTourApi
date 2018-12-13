@@ -1,0 +1,102 @@
+/* 全体設定 */
+body {
+	background:rgb(213, 227, 231);
+    font-family:serif, "ＭＳ Ｐゴシック", sans-serif;
+    font-size:15px;
+}
+/* ヘッダー */
+#header{
+    background-image: url("../img/header_after2.jpg");
+    background-size: auto;
+    height: 100px;
+    text-align: center;
+    line-height:60px;
+    color: rgb(12, 14, 32);
+    font-size:230%;
+}
+/* コンテンツ部分全体 */
+#content{
+    font-size:0;
+    height: 600px;
+}
+
+/* 
+ * 左側コンテンツ群
+ */
+#content-left{
+    background:rgb(255, 255, 255);
+    display: inline-block; /* 要素を横並べ */
+    vertical-align: top;/* 上寄せ */
+    height: 100%;
+    width:14%;
+    font-size:16px;
+    /* 枠の設定 */
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
+    border: solid 3px;/* 線の設定 */
+    border-radius: 10px;/* 丸みの設定 */
+}
+a {/* リンクの見た目変更 */
+    color: rgb(122, 122, 122);
+    font-weight: bold	
+    }
+a:hover {/* マウスオーバー時のリンクの見た目変更 */
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: bold	
+    }
+
+/* 
+ * 中央コンテンツ群
+ */
+#content-center{
+    display: inline-block;
+    vertical-align: top;/* 上寄せ */
+    width: 54%;
+    font-size: 15px;
+    margin: 0.7em 0
+}
+#map{
+    height: 80%;
+}
+#operate{
+    background:rgb(255, 255, 255);
+    height: 20%;
+    font-size:16px;
+    /* 枠の設定 */
+    margin: 0.1em 0;
+    padding: 0.5em 0.5em;
+    border: solid 3px;/* 線の設定 */
+    border-radius: 10px;/* 丸みの設定 */
+}
+#reset{
+    font-size:80%;
+}
+#tour{
+    font-size:80%;
+}
+
+/* 
+ *右側コンテンツ群
+ */
+#content-right{
+    background:rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: top;/* 上寄せ */
+    height: 100%;
+    width:24%;
+    font-size: 16px;
+
+    /* 枠の設定 */
+    margin: 0.5em 0.7em;
+    padding: 0.5em 1em;
+    border: solid 3px;/* 線の設定 */
+    border-radius: 10px;/* 丸みの設定 */
+}
+#info{
+    font-size: 120%;
+}
+#img{
+    width:100%;
+    height:100px;
+}
