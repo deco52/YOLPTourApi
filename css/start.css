@@ -3,7 +3,16 @@ body {
 	background:rgb(213, 227, 231);
     font-family:serif, "ＭＳ Ｐゴシック", sans-serif;
     font-size:15px;
+    width: 1250px;
+    animation: fadeIn 2s ease 0s 1 normal; /* アニメーション設定 */
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
+
+@keyframes fadeIn { /* フェードイン設定 */
+    0% {opacity: 0} /* 開始 */
+    100% {opacity: 1} /* 終了 */
+}
+
 /* ヘッダー */
 #header{
     background-image: url("../img/header_after2.jpg");
@@ -14,10 +23,21 @@ body {
     color: rgb(12, 14, 32);
     font-size:230%;
 }
+/* メニュー部分(ダミー) */
+#menu{
+    /*height: 40px;*/
+    display: inline;
+    font-size:120%;
+    /*background: rgb(255, 255, 255);
+    margin: 0.1em 0;
+    padding: 0.5em 1em;
+    border: solid 3px;
+    border-radius: 3px;*/
+}
 /* コンテンツ部分全体 */
 #content{
     font-size:0;
-    height: 600px;
+    height: 650px;
 }
 
 /* 
@@ -26,12 +46,12 @@ body {
 #content-left{
     background:rgb(255, 255, 255);
     display: inline-block; /* 要素を横並べ */
-    vertical-align: top;/* 上寄せ */
+    vertical-align: top; /* 上寄せ */
     height: 100%;
     width:14%;
     font-size:16px;
     /* 枠の設定 */
-    margin: 0.5em 0.5em;
+    margin: 0.3em 0.5em;
     padding: 0.5em 0.5em;
     border: solid 3px;/* 線の設定 */
     border-radius: 10px;/* 丸みの設定 */
@@ -54,21 +74,64 @@ a:hover {/* マウスオーバー時のリンクの見た目変更 */
     vertical-align: top;/* 上寄せ */
     width: 54%;
     font-size: 15px;
-    margin: 0.7em 0
+    margin: 0.5em 0
 }
 #map{
     height: 80%;
 }
+/* 中央下部の操作部分  入れ子がカオス(ﾟ∀｡)*/
 #operate{
     background:rgb(255, 255, 255);
     height: 20%;
     font-size:16px;
     /* 枠の設定 */
-    margin: 0.1em 0;
-    padding: 0.5em 0.5em;
+    margin: 0.3em 0;
+    padding: 0.2em 0.1em;
     border: solid 3px;/* 線の設定 */
     border-radius: 10px;/* 丸みの設定 */
 }
+.operate-child{
+    height: 50%;
+}
+.input-area{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 20px;
+}
+.input-design{
+    font-family:serif;
+    font-size: 20px;
+}
+.button-area{
+    margin: 0.5em 0;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    font-size: 20px;
+}
+.button-design{
+    background-color: rgb(255, 255, 255);
+    font-family:serif;
+    display: inline-block;
+    max-width: 180px;
+    text-align: left;
+    border: 2px solid rgb(122,122,122);
+    font-size: 16px;
+    color:rgb(122,122,122);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 2px;
+    transition: .4s;
+}
+.button-design:hover {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: #FFF;
+  }
+
+
 #reset{
     font-size:80%;
 }
@@ -86,9 +149,8 @@ a:hover {/* マウスオーバー時のリンクの見た目変更 */
     height: 100%;
     width:24%;
     font-size: 16px;
-
     /* 枠の設定 */
-    margin: 0.5em 0.7em;
+    margin: 0.3em 0.7em;
     padding: 0.5em 1em;
     border: solid 3px;/* 線の設定 */
     border-radius: 10px;/* 丸みの設定 */
@@ -98,5 +160,5 @@ a:hover {/* マウスオーバー時のリンクの見た目変更 */
 }
 #img{
     width:100%;
-    height:100px;
+    height:250px;
 }

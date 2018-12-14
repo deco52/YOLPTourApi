@@ -11,6 +11,15 @@
 
 <body onload="initialize()">
     <div id="header">長野県飯田市観光ツアー</div>
+    <!-- ダミーメニュー
+        <div id="menu">
+        <ul>
+            <li><a href="#">top</a></li>
+            <li><a href="#">info</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </div>
+    -->
     <div id="content">
         <div id="content-left">
             <b>観光地リスト</b>
@@ -18,10 +27,19 @@
             <span id="link"></span>
         </div>
         <div id="content-center">
-            <div id="map" style="width:100%;height:545px;"></div>
+            <div id="map" style="width:100%;height:550px;"></div>
             <div id="operate">
-                <span id="reset"></span><br />
-                <span id="tour"></span><br />
+                <div class="operate-child">
+                    <div class="input-area">
+                        <div id="round-area"></div>
+                    </div>
+                    <div class="input-area">
+                        <div id="timer-area"></div>
+                    </div>
+                </div>
+                <div class="operate-child">
+                    <div id="tour"></div>
+                </div>
             </div>
         </div>
         <div id="content-right">
@@ -29,7 +47,6 @@
             <div id="img"></div>
             <div id="now"></div>
         </div>
-    </div>
 </body>
 
 </html>
