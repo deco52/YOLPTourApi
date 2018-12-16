@@ -4,8 +4,17 @@ body {
     font-family:serif, "ＭＳ Ｐゴシック", sans-serif;
     font-size:15px;
     width: 1250px;
-    animation: fadeIn 2s ease 0s 1 normal; /* アニメーション設定 */
-    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    /* アニメーション設定 */
+    /* 各引数の内容
+    1 animation-name	キーフレームアニメーション名を指定。
+    2 animation-duration	1回のアニメーションにかかる時間を指定。
+    3 animation-timing-function	アニメーションの変化率を指定。他に ease、linear、ease-out、ease-in-out やオリジナルの変化率を指定できる。
+    4 animation-delay	アニメーションの開始をいくら遅らせるかを指定。
+    5 animation-iteration-count	アニメーションを何回繰り返すかを指定。
+    6 animation-direction	繰り返し時、往復処理をするかを指定。 
+    */
+    animation: fadeIn 4s ease 0s 1 normal; 
+    -webkit-animation: fadeIn 4s ease 0s 1 normal;
 }
 
 @keyframes fadeIn { /* フェードイン設定 */
@@ -62,7 +71,7 @@ a {/* リンクの見た目変更 */
     }
 a:hover {/* マウスオーバー時のリンクの見た目変更 */
     color: rgb(0, 0, 0);
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold	
     }
 
@@ -74,15 +83,18 @@ a:hover {/* マウスオーバー時のリンクの見た目変更 */
     vertical-align: top;/* 上寄せ */
     width: 54%;
     font-size: 15px;
-    margin: 0.5em 0
+    margin: 0.3em 0
 }
 #map{
     height: 80%;
+    border: solid 3px;/* 線の設定 */
+    border-radius: 10px;/* 丸みの設定 */
 }
 /* 中央下部の操作部分  入れ子がカオス(ﾟ∀｡)*/
 #operate{
     background:rgb(255, 255, 255);
     height: 20%;
+    width:99%;
     font-size:16px;
     /* 枠の設定 */
     margin: 0.3em 0;

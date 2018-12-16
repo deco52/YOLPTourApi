@@ -6,7 +6,7 @@ var map, cityData;
 function initialize() {
 	map = new Y.Map("map");
 	map.drawMap(
-		new Y.LatLng(35.485115, 137.937964),// ツアーの中心の緯度経度
+		new Y.LatLng(35.444557, 137.840175),// ツアーの中心の緯度経度
 		12,// ズームレベル
 		Y.LayerSetId.NORMAL// 通常地図を指定
 	);
@@ -21,7 +21,7 @@ function initialize() {
 	obj.onreadystatechange = function () {
 		if (obj.readyState == 4 && obj.status == 200) ReadJson(obj.responseText);
 	}
-	obj.open("get", "iida_city_tour.json");
+	obj.open("get", "south-nagano-tour.json");
 	obj.setRequestHeader("If-Modified-Since", "01 Jan 2000 00:00:00 GMT");
 	obj.send(null);
 
